@@ -1,0 +1,30 @@
+.comment-form-main-container{
+    display: grid;
+    padding: 10px 5px 10px 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .23);
+    /* margin: 5px; */
+}
+.comment-form-main-container input{
+    height: 30px;
+    margin-bottom: 10px;
+}
+.comment-form-main-container input[name="comment"]{
+    height: 60px;
+    position: relative;
+}
+.comment-form-main-container input[name="comment"]::placeholder{
+    position: relative;
+    /* left: 10px; */
+    top: -15px;
+}
+
+.comment-form-submit-button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size:16px;
+    background-color: rgb(37, 37, 37);
+    color: #ffffff;
+}

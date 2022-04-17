@@ -1,0 +1,12 @@
+.comment-two-main-container{
+    margin-left: 10px;
+    /* margin-top: 5px; */
+    padding: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .11);
+}
+
+.comment-two-inner-root-comment-container{
+    background-color: #dff3f8;
+    /* box-shadow: 0 0 4px rgba(0, 0, 0, .23); */
+    padding: 10px;
+}
