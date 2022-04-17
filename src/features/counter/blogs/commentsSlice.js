@@ -9,7 +9,7 @@ export const getAllComments = createAsyncThunk(
     'comment/blogId',
     async (blogId) =>{
         //console.log(blogId)
-        const response = await fetch(`http://localhost:5000/comment/${blogId}`)
+        const response = await fetch(`https://obscure-river-16853.herokuapp.com/comment/${blogId}`)
         .then(res => res.json())
         .catch(error => {})
         return response
@@ -19,7 +19,7 @@ export const postNewComment = createAsyncThunk(
     'newComment',
     async(newComment) => {
         //console.log(newComment);
-        const response = await fetch(`http://localhost:5000/newComment`,{
+        const response = await fetch(`https://obscure-river-16853.herokuapp.com/newComment`,{
             method:'POST',
             headers:{
                 'content-type':'application/json',

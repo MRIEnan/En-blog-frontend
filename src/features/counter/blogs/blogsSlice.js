@@ -27,7 +27,7 @@ export const getAllBlogs = createAsyncThunk(
     async (pageNo) =>{
         //console.log(pageNo)
         const limit=5;
-        const response = await fetch(`http://localhost:5000/allBlogs?page=${pageNo}&limit=${limit}`)
+        const response = await fetch(`https://obscure-river-16853.herokuapp.com/allBlogs?page=${pageNo}&limit=${limit}`)
         .then(res => res.json())
         .catch(error => {})
         return response
@@ -37,7 +37,7 @@ export const postNewBlog = createAsyncThunk(
     'newBlog',
     async(newPost) => {
         //console.log(newPost);
-        const response = await fetch(`http://localhost:5000/newBlog`,{
+        const response = await fetch(`https://obscure-river-16853.herokuapp.com/newBlog`,{
             method:'POST',
             headers:{
                 'content-type':'application/json',
@@ -52,7 +52,7 @@ export const postNewBlog = createAsyncThunk(
 export const getSingleBlog = createAsyncThunk(
     'blogApp/blog/id',
     async (id) =>{
-        const response = await fetch(`http://localhost:5000/blog/${id}`)
+        const response = await fetch(`https://obscure-river-16853.herokuapp.com/blog/${id}`)
         .then(res => res.json())
         .catch(error => {})
         return response
