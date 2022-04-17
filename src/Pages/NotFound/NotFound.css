@@ -1,0 +1,15 @@
+.not-found-page-main-container{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.not-found-blog-btn{
+    color: #ffffff;
+    background-color: #3d93f5;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+}
